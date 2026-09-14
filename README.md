@@ -14,15 +14,12 @@ animation example that can be run and studied independently.
 
 ## Project overview
 
-| Day | Topic | Source code | Video |
-| --- | --- | --- | --- |
-| Day 1 | Animated Container - Energy Core | [`day_01_Animated_Container`](lib/day_01_Animated_Container/) | [Open day 1 video](file:///F:/yt%20video/day1.mp4) |
-| Day 2 | Onboarding Screen | [`day_02_Onboarding%20Screen`](lib/day_02_Onboarding%20Screen/) | [Open day 2 video](file:///F:/yt%20video/day02.mp4) |
+| Day | Topic | Source code | Video Demo |
+| :--- | :--- | :--- | :--- |
+| Day 01 | Animated Container - Energy Core | [`day_01_Animated_Container`](lib/day_01_Animated_Container/) | [🎬 Watch Day 01](assets/videos/day_01.mp4) |
+| Day 02 | Onboarding Screen | [`day_02_Onboarding Screen`](lib/day_02_Onboarding%20Screen/) | [🎬 Watch Day 02](assets/videos/day_02.mp4) |
 
-> The video links point to the local `F:\yt video` folder on Windows. They are
-> intended for local development and will only work on a computer that has the
-> same files at that location. For shareable links, replace them with YouTube
-> or another hosted video URL.
+> 💡 **Tip:** Video demos are stored inside the repository at [`assets/videos/`](assets/videos/). When viewing on GitHub or locally, click any video link to open and play the demo.
 
 ## Getting started
 
@@ -49,48 +46,59 @@ import and root widget there when switching between day projects.
 `AnimatedContainer` and related visual effects.
 
 - Source: [`lib/day_01_Animated_Container/`](lib/day_01_Animated_Container/)
-- Video: [Open day 1 video](file:///F:/yt%20video/day1.mp4)
+- Video: [🎬 Watch Day 01 Demo](assets/videos/day_01.mp4)
 
 ### Day 2 - Onboarding Screen
 
 **Focus:** Creating an animated onboarding experience with reusable widgets,
 page transitions, indicators, and a morphing background.
 
-- Source: [`lib/day_02_Onboarding%20Screen/`](lib/day_02_Onboarding%20Screen/)
-- Video: [Open day 2 video](file:///F:/yt%20video/day02.mp4)
+- Source: [`lib/day_02_Onboarding Screen/`](lib/day_02_Onboarding%20Screen/)
+- Video: [🎬 Watch Day 02 Demo](assets/videos/day_02.mp4)
 
 ## Project structure
 
 ```text
-lib/
-├── main.dart
-├── day_01_Animated_Container/
-│   └── energy_core_screen.dart
-└── day_02_Onboarding Screen/
-    ├── models/
-    ├── screens/
-    └── widgets/
+flutter-widget-animations/
+├── assets/
+│   └── videos/
+│       ├── day_01.mp4
+│       └── day_02.mp4
+├── lib/
+│   ├── main.dart
+│   ├── day_01_Animated_Container/
+│   │   └── energy_core_screen.dart
+│   └── day_02_Onboarding Screen/
+│       ├── models/
+│       ├── screens/
+│       └── widgets/
 ```
 
-Each new day should have its own `day_NN_Topic_Name` folder. Keep screen-level
-files in `screens/` and reusable UI pieces in `widgets/` when the example is
-large enough to benefit from that organization.
+Each new day should have its own `day_NN_Topic_Name` folder under `lib/`, and its demo video stored in `assets/videos/day_NN.mp4`. Keep screen-level files in `screens/` and reusable UI pieces in `widgets/` when the example is large enough to benefit from that organization.
 
 ## Adding a new day
 
-1. Create a folder such as `lib/day_03_Animated_List/`.
-2. Add the new screen and supporting widgets.
-3. Update [`lib/main.dart`](lib/main.dart) to run the new example.
-4. Add one row to the [project overview](#project-overview).
-5. Add a matching section under [learning series](#learning-series).
-6. Add the local video link using this format:
+Follow these steps whenever you create a new animation example:
 
+1. **Create code folder**: Add a new folder such as `lib/day_03_Animated_List/`.
+2. **Add screens & widgets**: Build your screen and supporting widgets.
+3. **Update runner**: Set the new screen as `home` in [`lib/main.dart`](lib/main.dart) to run it.
+4. **Add demo video**:
+   - Save your demo recording in [`assets/videos/`](assets/videos/).
+   - Follow standard naming: `day_03.mp4` (or `day_XX.mp4`).
+5. **Update README table**: Add a new row to the [project overview](#project-overview) table:
    ```markdown
-   | Day 3 | Animated List | [`day_03_Animated_List`](lib/day_03_Animated_List/) | [Open day 3 video](file:///F:/yt%20video/day03.mp4) |
+   | Day 03 | Animated List | [`day_03_Animated_List`](lib/day_03_Animated_List/) | [🎬 Watch Day 03](assets/videos/day_03.mp4) |
    ```
+6. **Update Learning Series**: Add a matching section under [learning series](#learning-series):
+   ```markdown
+   ### Day 3 - Animated List
 
-7. If the video is hosted online, replace the local `file:///` link with the
-   public URL so everyone can access it.
+   **Focus:** Description of what was built and learned.
+
+   - Source: [`lib/day_03_Animated_List/`](lib/day_03_Animated_List/)
+   - Video: [🎬 Watch Day 03 Demo](assets/videos/day_03.mp4)
+   ```
 
 ## Useful resources
 
