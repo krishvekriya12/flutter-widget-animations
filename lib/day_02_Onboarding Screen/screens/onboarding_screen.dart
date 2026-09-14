@@ -120,7 +120,9 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                         onPressed: _openHome,
                         child: Text(
                           'Skip',
-                          style: TextStyle(color: Colors.white.withOpacity(0.5)),
+                          style: TextStyle(
+                            color: Colors.white.withOpacity(0.5),
+                          ),
                         ),
                       ),
                     ),
@@ -152,18 +154,19 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                     height: 58,
                     child: ElevatedButton(
                       onPressed: _nextPage,
-                      style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.transparent,
-                        shadowColor: Colors.transparent,
-                        padding: EdgeInsets.zero,
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(18),
-                        ),
-                      ).copyWith(
-                        overlayColor: MaterialStateProperty.all(
-                          Colors.white.withOpacity(0.1),
-                        ),
-                      ),
+                      style:
+                          ElevatedButton.styleFrom(
+                            backgroundColor: Colors.transparent,
+                            shadowColor: Colors.transparent,
+                            padding: EdgeInsets.zero,
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(18),
+                            ),
+                          ).copyWith(
+                            overlayColor: MaterialStateProperty.all(
+                              Colors.white.withOpacity(0.1),
+                            ),
+                          ),
                       child: Ink(
                         decoration: BoxDecoration(
                           gradient: LinearGradient(colors: activeGradient),
