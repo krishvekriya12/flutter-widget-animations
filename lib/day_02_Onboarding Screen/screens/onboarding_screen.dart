@@ -20,22 +20,19 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
   final List<OnboardingPage> _pages = const [
     OnboardingPage(
       title: 'Stay Focused',
-      description:
-          'Organize your work and eliminate distractions so you can focus on what really matters.',
+      description: 'Organize your work and eliminate distractions so you can focus on what really matters.',
       icon: Icons.center_focus_strong_rounded,
       gradientColors: [Color(0xFF6C5CE7), Color(0xFF00CEC9)],
     ),
     OnboardingPage(
       title: 'Plan Your Day',
-      description:
-          'Turn your goals into simple tasks and build a routine that actually works for you.',
+      description: 'Turn your goals into simple tasks and build a routine that actually works for you.',
       icon: Icons.calendar_month_rounded,
       gradientColors: [Color(0xFFFF7675), Color(0xFFFDCB6E)],
     ),
     OnboardingPage(
       title: 'Get Things Done',
-      description:
-          'Track your progress, complete your goals and make every day more productive.',
+      description: 'Track your progress, complete your goals and make every day more productive.',
       icon: Icons.rocket_launch_rounded,
       gradientColors: [Color(0xFF00B894), Color(0xFF0984E3)],
     ),
